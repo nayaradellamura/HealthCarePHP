@@ -1,0 +1,114 @@
+:root {
+  --primary-color: #3BB273;
+  --hover-primary: #2E9B65;
+  --danger-color: #FF6B6B;
+  --edit-hover: #FED48B;
+  --info-color: #5EB6E4;
+  --table-header-bg: #1D3B73;
+  --table-alt-row: #EFF6FA;
+  --hover-row: #e3faeb;
+  --btn-orange: #F28C28;
+  --white: #ffffff;
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.15);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--white);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background-color: var(--table-header-bg);
+  color: var(--white);
+}
+
+thead.azul-custom {
+  background-color: var(--info-color);
+  color: var(--white);
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--table-alt-row);
+}
+
+tbody tr:hover {
+  background-color: var(--hover-row);
+}
+
+/* Botões gerais */
+button,
+a.btn-custom {
+  background-color: var(--btn-orange);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+  text-decoration: none;
+}
+
+button:hover,
+a.btn-custom:hover {
+  background-color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-custom-vencimento,
+.btn-custom-apagar,
+.btn-custom-editar {
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+  text-decoration: none;
+}
+
+.btn-custom-vencimento {
+  background-color: var(--primary-color);
+}
+
+.btn-custom-vencimento:hover {
+  background-color: var(--info-color);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-custom-apagar {
+  background-color: var(--primary-color);
+}
+
+.btn-custom-apagar:hover {
+  background-color: var(--danger-color);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-custom-editar {
+  background-color: var(--primary-color);
+}
+
+.btn-custom-editar:hover {
+  background-color: var(--edit-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
