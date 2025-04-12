@@ -4,7 +4,7 @@ require 'config.php';
 
 if (!empty($_POST['remedio']) && !empty($_POST['vencimento']) && !empty($_POST['efeitos'])) {
     $remedio = addslashes($_POST['remedio']);
-    $vencimento = $_POST['vencimento']; // formato yyyy-mm-dd já pronto para o banco
+    $vencimento = $_POST['vencimento']; 
     $efeitos = addslashes($_POST['efeitos']);
 
     $sql = "INSERT INTO remedios (remedio, vencimento, efeitos) VALUES ('$remedio', '$vencimento', '$efeitos')";

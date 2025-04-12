@@ -3,7 +3,7 @@
 
     $id = addslashes($_GET['id']);
 
-    if(isset($_POST['remedio']) && empty($_POST['vencimento'])  && empty($_POST['efeitos']) == false){
+    if(!empty($_POST['remedio']) && !empty($_POST['vencimento']) && !empty($_POST['efeitos'])){
         $remedio = addslashes($_POST['remedio']);
         $vencimento = addslashes($_POST['vencimento']);
         $efeitos = addslashes($_POST['efeitos']);
